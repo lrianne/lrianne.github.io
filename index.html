@@ -2,14 +2,107 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="layout&style.css">
-    <script defer src="index.js"></script>
+    <script defer src="index.js"></script> <!--defer- executes or runs the script after the elements in the HTML body is available-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RUE's</title>
 </head>
 <body>
-    <h1>TESTING</h1>
+
+    <!--NAVIGATION features three page links and the submenu which appears when mouse hovers on the 'Our Works' page.-->
+    <!--The dropdown menu was made though CSS-->
+    <nav class="navigation">
+        <ul>
+            <li class="logo"><a href="index.html">RUE's <img class="logo-img" src="/images/home/pexels-uncoveredlens-eze-joshua-5302784 (1).jpg"> Lens</a></li>
+            <li><a href="/contents/about.html">About</a></li>
+            <li><a href="/contents/services.html">Services</a></li>
+            <li class="dropdown-folio">Our Works
+                <ul class="cat-folio">
+                    <li><a href="/contents/works/archi.html">Architectural</a></li>
+                    <li><a href="/contents/works/commercial.html">Commercial</a></li>
+                    <li><a href="/contents/works/docu.html">Documentary</a></li>
+                    <li><a href="/contents/works/events.html">Events</a></li>
+                    <li><a href="/contents/works/land.html">Landscapes</a></li>
+                    <li><a href="/contents/works/portraits.html">Portraiture</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!--HEADER Contains the background on the-->
+    <header>
+        <div id="cover-img"></div>
+        <h1 class="phrase">Where Stories Start<br> And Memories Last</h1>
+    </header>
     
+    <!--THIS SECTION IS THE SHORT SUMMARY OF WHAT CAN BE FOUND ON EACH PAGE-->
+    <section class="home-contents"> 
+        <div>
+            <div class="from-bottom" id="home-s1"> <!--About Us Summary-->
+                <p class="home-text">
+                    About<br><br>
+                    Everyone has a story to tell and stories are what fuel our work. Our team had a start, a beginning, just 
+                    as any story does, and we aim to be a start to your memories. <a href="/contents/about.html">Learn more about our story.</a></p></div>
+        </div>
+        <div>
+            <div class="from-bottom" id="home-s2"> <!--Services Summary-->
+                <p class="home-text">
+                    Services<br><br>
+                    RUE’s Lens offers a wide variety of services for all. We believe that each project we receive can be 
+                    successfully accomplished through open communication both in the team and our clients. <a href="/contents/services.html">Learn more about 
+                    what we do.</a></p></div>
+        </div>
+        <div>
+            <div class="from-bottom" id="home-s3"> <!--Projects Summary-->
+                <p class="home-text">
+                    Projects <br><br>
+                    It is said that “You see the photographer’s feelings through their work”, that is why we too share the 
+                    results of our projects and take pride in them. Learn more about the work we’ve done, by checking out the "Our Works" page.</p></div>
+        </div>
+        
+    </section>
+
+    <!--The FOOTER features important links and a sample phone number and email written under a contact info section-->
+    <footer>
+        <section class="ftr-sect">
+            <section id="quick-links">
+                <h3>Quick Links</h3>
+                </h3>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/contents/about.html">About</a></li>
+                    <li><a href="/contents/services.html">Services</a></li>
+                </ul>
+            </section>   
+            <section id="works">
+                <h3>Projects</h3>
+                <ul>
+                    <li><a href="/contents/works/archi.html">Architectural</a></li>
+                    <li><a href="/contents/works/commercial.html">Commercial</a></li>
+                    <li><a href="/contents/works/docu.html">Documentary</a></li>
+                    <li><a href="/contents/works/events.html">Events</a></li>
+                    <li><a href="/contents/works/land.html">Landscapes</a></li>
+                    <li><a href="/contents/works/portraits.html">Portraiture</a></li>
+                </ul>
+            </section>
+            <section id="socials">
+                <h3>Socials</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com/">YouTube</a></li>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F">LinkedIn</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Contact Us</h3>
+                <p><img src="/images/icons/call_FILL1_wght400_GRAD0_opsz48.png"> Phone: +971 56 123 4567</p><br>
+                <p><img src="/images/icons/mail_FILL1_wght400_GRAD0_opsz48.png"> Email: lens@rue.com</p>
+            </section>
+        </section>
+        <hr>
+        <p>Copyright &copy;2023 Rujeth Tanchico </p>
+    </footer>
 </body>
 </html>

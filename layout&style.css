@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Gugi&family=Josefin+Sans&family=Poppins&family=Roboto+Mono:ital,wght@1,100;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+/*NAVIGATION BAR*/
+.navigation{
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 8%;
+    padding-left: 10%;
+    z-index: 1;
+}
+
+nav ul{list-style-type: none;}
+nav a{color:white; text-decoration: none; }
+nav a:visited{color: white;}
+nav a:hover{color: rgb(231, 122, 89);}
+nav li{display: inline-block; color: white; padding-right: 5%;}
+nav li:hover{color: rgb(231, 122, 89);}
+
+.logo{
+    font-family: 'Cinzel', serif;
+    font-size: xx-large;
+    padding-right: 30%; /*padding-left: 10%;*/
+}
+.logo-img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: 0 70%;
+    border-radius: 50%;
+}
+/*DROPDOWN*/
+.cat-folio{
+    list-style-type: none;
+    position: absolute;
+    top: 110px;
+    width: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 120px;
+    padding-left: 15px;
+    background-color: rgb(63, 63, 63);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, .40);
+    border-radius: 5px;
+    opacity: 0;
+    z-index: -99;
+    transition: all ease 0.5s;
+}
+.dropdown-folio:hover .cat-folio{
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+}
+
+/*FOOTER*/
+footer{
+    color: white;
+    padding-bottom: 10px;
+    background-color: rgb(22, 22, 22);
+}
+footer hr{width: 90%; margin-left: 5%;  margin-right: 5%;}
+footer p{margin-left: 5%; bottom: 0; } 
+footer p img{width: 15px; background-color: antiquewhite; border-radius: 2px;}
+footer ul li{list-style-type: none; color: antiquewhite;}
+footer li a{text-decoration: none; color: antiquewhite;}
+footer li a:hover{color: rgba(255, 255, 255, .50);}
+.ftr-sect{
+    background-color: rgb(22, 22, 22);
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    column-gap: 5%;
+    padding-top: 2%;
+    margin-left: 5%; margin-right: 5%;
+    margin-bottom: 2%;
+}
+
+/*HOME PAGE*/
+/*Background Image which was made to look like it is zooming out on scroll*/
+#cover-img{
+    position: relative;
+    width: 100%;
+    height: 380px;
+    background-image: url(/images/Trial/pexels-taryn-elliott-4340918.jpg);
+    background-attachment: fixed;
+    background-position: 10% 0%;
+    background-size: 120%;
+    text-align: center;
+    opacity: 3%;
+}
+.phrase{
+    color: white;
+    width: 100%;
+    font-size: 120px;
+    padding-left: 6%;
+}
+
+#home-s1, #home-s2, #home-s3{
+    width: 445px;
+    height: 500px;
+}
+#home-s1{
+    background-image: url(/images/home/pexels-md-iftekhar-uddin-emon-403495.jpg); 
+    background-size: cover;
+}
+
+#home-s2{
+    background-image: url(/images/home/pexels-gül-işık-13393870.jpg); 
+    background-size: cover;
+    background-position: 0 30%;
+}
+#home-s3{
+    background-image: url(/images/home/pexels-диана-дунаева-11388583.jpg); 
+    background-size: cover;
+    background-position: 0 20%;
+}
+.home-text{
+    width: 445px;
+    height: 500px;
+    padding: 90px;
+    text-align: justify;
+    color: white;
+}
+
+.home-text a:link, .home-text a:visited{color: white;}
+.home-text a:hover{color: rgb(231, 122, 89)}
+
+.home-contents{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 3.5%;
+    height: 500px;
+    margin-left: auto; margin-right: auto;
+}
+.home-contents p{
+    background-color: rgba(63, 63, 63, .50);
+}
+/*ABOUT PAGE*/
+video{
+    position: relative;
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    z-index: -1;
+}
+.text-filter{
+    background-image:radial-gradient(circle at center, rgba(0, 0, 0, .70),rgba(0, 0, 0, .20));
+    position: absolute;
+    width: 100%;
+    height: 540px;
+    text-align: justify;
+}
+.text-filter p, .text-filter h2{
+    width: 60%;
+    margin-top: 5%;
+    color: white;
+    margin-left: 20%; margin-right: 20%;
+    font-size: large;
+}
+
+/*SERVICES PAGE*/
+.service{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 2%;
+    row-gap: 2%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.types{
+    background-color: azure;
+    width: 400px;
+    height: 500px;
+}
+.service-img{
+    width: 350px;
+    height: 450px;
+    margin-left: 6%;
+    background-size: cover;
+}
+
+.service-img p{
+    width: 350px;
+    height: 450px;
+    padding-left: 20px; padding-right: 20px;
+    padding-top: 20px; padding-bottom: 20px;
+    opacity: 0;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, .50);
+}
+.service-img:hover p{
+    opacity: 1;
+    z-index: 98;
+    transition: all ease 0.5s;
+}
+
+.service h2{
+    margin-left: 6%;
+    margin-top: 1%;
+}
+
+#service-one{
+    background-image: url(/images/service/pexels-timea-kadar-2659515.jpg);
+}
+#service-two{
+    background-image: url(/images/service/pexels-nadine-wuchenauer-3999057.jpg);
+}
+#service-three{
+    background-image: url(/images/service/pexels-alena-darmel-7322008.jpg);
+}
+#service-four{
+    background-position: 70% 0;
+    background-image: url(/images/service/pexels-nghia-trinh-931796.jpg);
+}
+#service-five{
+    background-image: url(/images/service/pexels-mateusz-sałaciak-4275887.jpg);
+}
+#service-six{
+    background-image: url(/images/service/pexels-leroy-skalstad-16935760.jpg);
+}
+
+/*PORTFOLIO PAGE*/
+.container{
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #000000;
+    height: 550px;
+}
+.container h1{color: white; margin-left: 5%;}
+.img-slider-right{
+    display: inline-block;
+    animation: 15s slide-right infinite linear;
+    margin-top: 2%;
+}
+.img-slider-right img{
+    width: 300px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-left: 5px; margin-right: 5px;
+}
+
+
+
+
+
+/*CSS Animation*/
+/*CAROUSEL*/
+@keyframes slide-right {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+/*Slide from LEFT*/
+@keyframes slide-left {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+/*JavaScript ANIMATIONS*/
+/*SLIDE LEFT,RIGHT, DOWN ANIMATION (CSS and JavaScript)*/
+.from-left{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;;
+}
+
+.from-right{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.from-bottom{
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 1s;
+}
+
+.animate-left{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animate-right{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animate-bottom{
+    opacity: 1;
+    transform: translateY(-50%);
+}
