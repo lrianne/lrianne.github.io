@@ -241,7 +241,7 @@ video{
 .container h1{color: white; margin-left: 5%;}
 .img-slider-right{
     display: inline-block;
-    animation: 15s slide-right infinite linear;
+    animation: 20s slide-right infinite linear;
     margin-top: 2%;
 }
 .img-slider-right img{
