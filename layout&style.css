@@ -94,9 +94,9 @@ footer li a:hover{color: rgba(255, 255, 255, .50);}
     position: relative;
     width: 100%;
     height: 380px;
-    background-image: url(/images/Trial/pexels-taryn-elliott-4340918.jpg);
+    background-image: url(/images/home/pexels-taryn-elliott-4340919.jpg);
     background-attachment: fixed;
-    background-position: 10% 0%;
+    background-position: 10% 20%;
     background-size: 120%;
     text-align: center;
     opacity: 3%;
@@ -195,11 +195,10 @@ video{
 .service-img p{
     width: 350px;
     height: 450px;
-    padding-left: 20px; padding-right: 20px;
-    padding-top: 20px; padding-bottom: 20px;
+    padding: 70px;
     opacity: 0;
     z-index: 99;
-    background-color: rgba(255, 255, 255, .50);
+    background-color: rgba(255, 255, 255, .80);
 }
 .service-img:hover p{
     opacity: 1;
@@ -226,7 +225,7 @@ video{
     background-image: url(/images/service/pexels-nghia-trinh-931796.jpg);
 }
 #service-five{
-    background-image: url(/images/service/pexels-mateusz-sałaciak-4275887.jpg);
+    background-image: url(/images/service/pexels-senuscape-1658967.jpg);
 }
 #service-six{
     background-image: url(/images/service/pexels-leroy-skalstad-16935760.jpg);
